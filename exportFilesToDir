@@ -1,0 +1,13 @@
+function rcopy2($src, $dst) {
+
+        $files = scandir($src);
+        $nbFiles=count($files);
+
+        for($i=0;$i<$nbFiles;$i++)
+        {
+            if ($files[$i] != "." && $files[$i] != ".." && !is_dir($files[$i])){
+                copy($src . "/" . $files[$i], $dst . "/" . $files[$i]);
+            }
+
+        }
+}
