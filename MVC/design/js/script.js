@@ -147,7 +147,7 @@ var increment = 0;
             
             });
     }
-    $("body").on('click', 'a', function(e){
+    $("section.wiki").on('click', 'a', function(e){
         e.preventDefault();
         var link = $(this).attr('href');
         window.open(link,

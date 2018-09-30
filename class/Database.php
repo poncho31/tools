@@ -7,13 +7,14 @@ class Database
      */
     protected $config;
     protected $db;
-    public function __construct()
+    public function __construct($dbName = 'lexique')
     {
         
         $this->getINIConfig();
         if (!$this->db) 
         {
         	try {
+                $this->config['dbname'] = $dbName;
     	        $this->db = new PDO("mysql:dbname=".$this->config['dbname'].";host=".$this->config['host'].";charset=utf8", $this->config['login'], $this->config['pswd']);
     			$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     			$this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);

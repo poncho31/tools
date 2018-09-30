@@ -2,12 +2,14 @@
 require '../1config/Database.php';
 $db = new Database();
 
-$table = 'lex1';
+$table = 'rss';
 
 $query = "SHOW CREATE TABLE ". $table;
 $rows = $db->getQuery($query);
 foreach ($rows as $row) {
-	var_dump($row);
+    echo "<pre>";
+    print_r($row);
+    echo "</pre>";    
 }
 
 if ($rows) {
