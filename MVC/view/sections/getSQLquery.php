@@ -1,4 +1,4 @@
-<section class='getPathDirAndFiles'>
+<section class='getSQLquery'>
     <form action="#" method='post'>
         Database <input type="text" name="dbName" id="">
         Table <input type="text" name="tableName" id="">
@@ -24,3 +24,6 @@ if (isset($_POST['submit'])) {
         echo "<p class='alert-DANGER'>Erreur lors de la requête</p><br><br>";
     }
 }
+
+?>
+</section>

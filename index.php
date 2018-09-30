@@ -20,6 +20,10 @@ if (isset($_GET['section'])) {
 			include 'MVC/view/sections/getCSVtoArray.php';
 			break;
 
+		case 'csvtodb':
+			include 'MVC/view/sections/getCSVtoDB.php';
+			break;
+
 		case 'getsqlquery':
 			include 'MVC/view/sections/getSQLquery.php';
 			break;

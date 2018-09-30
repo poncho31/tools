@@ -26,6 +26,7 @@ h2{
     <hr>
 	<a href="?section=wikiapi"><button class='btn btn-success'>Wiki API</button></a>
 	<a href="?section=csvtoarray"><button class='btn btn-success'>CSV to array</button></a>
+	<a href="?section=csvtodb"><button class='btn btn-success'>CSV to DB</button></a>
 	<a href="?section=getsqlquery"><button class='btn btn-success'>Get SQL query</button></a>
 	<a href="?section=gitquery"><button class='btn btn-success'>Git query</button></a>
 	<a href="?section=getdirandfiles"><button class='btn btn-success'>Get path dir and files</button></a>
