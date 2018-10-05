@@ -1,5 +1,27 @@
 <section class='getCSVtoDB'>
+
+<div class='alert-danger toDo'>TO DO LIST<hr>
+    <p>&#8594; Ajouter proposition si table existe ou pas </p>
+    <p>&#8594; Si existe alors Formulaire normal </p>
+    <p>&#8594; Si pas alors proposer le nombre de champs </p>
+    <p>&#8594; Puis => le nom des champs / le type / unsigned ou rien/ Null ou Not null / auto increment ou default(='' ou ='something')</p>
+    <p>&#8594; Et la clé primaire => PRIMARY KEY  (`ID`)</p>
+</div>
+<div class='alert-success toDo'>TO DO LIST<hr>
+    <p>
+        "CREATE TABLE IF NOT EXISTS `sun_channel` (
+        `ID` int(11) unsigned NOT NULL auto_increment,
+        `EMAIL` varchar(255) NOT NULL default '',
+        `PASSWORD` varchar(255) NOT NULL default '',
+        `PERMISSION_LEVEL` tinyint(1) unsigned NOT NULL default '1',
+        `APPLICATION_COMPLETED` boolean NOT NULL default '0',
+        `APPLICATION_IN_PROGRESS` boolean NOT NULL default '0',
+        PRIMARY KEY  (`ID`))"
+    </p>
+</div>
+<br><br>
     <form action="#" method='post'>
+        
         Database <input type="text" name="dbName" id="">
         Table <input type="text" name="tableName" id="">
         Path <input type="text" name="path" id="">
