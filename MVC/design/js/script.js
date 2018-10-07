@@ -54,7 +54,7 @@ $(document).ready(function(){
                         " <div class='resume'  style='border: solid gray 2px; width:70%;padding: 10px;'>" +
                         "<p>" + sentence + "</p> </div>  <div class='keywords" + i + " items'></div>   </div>" ;
                     // console.log('keyword', keyword);
-                    getWikiSearch(keyword, "keywords" + i, 404);
+                    // getWikiSearch(keyword, "keywords" + i, 404);
                 }
                 $('.content').append(echo);
             });

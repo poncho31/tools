@@ -30,5 +30,7 @@ h2{
 	<a href="?section=getsqlquery"><button class='btn btn-success'>Get SQL query</button></a>
 	<a href="?section=gitquery"><button class='btn btn-success'>Git query</button></a>
 	<a href="?section=getdirandfiles"><button class='btn btn-success'>Get path dir and files</button></a>
+	<a href="?section=jsonfromurl"><button class='btn btn-success'>Get JSON from URL</button></a>
+    
     <hr>
 </nav>

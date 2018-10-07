@@ -31,6 +31,11 @@ if (isset($_GET['section'])) {
 		case 'gitquery':
 			include 'MVC/view/sections/getGitQuery.php';
 			break;
+
+		case 'jsonfromurl':
+			include 'MVC/view/sections/getJsonFromUrl.php';
+			break;
+
 		default:
 			include 'MVC/view/section.php';
 			break;
